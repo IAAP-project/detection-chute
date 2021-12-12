@@ -2,7 +2,7 @@
 OpenCv project to detect a person fall in videos with haarcascade
 
 # Prerequesite
-Packages used:
+All packages used are in **requirements.txt** file
 - python==2.7.7
 - numpy==1.14.5
 - opencv-python==3.4.1.15
@@ -13,9 +13,7 @@ Packages used:
 For each frame readed of the video corverted into gray, is removed the background, finded the contour and drawed the contours.
 If the heigh of the contour is lower than width, it may be a fall and we add 1 to a count, if the count is greater than 10, will be drawed a rectangle to the possible person fallen.
 
-# How to contribute
-To contribute to this project make the following guide:
-- Fork this repository, It will create a copy of the repository into  your account.
-- Clone the forked repository. (`git clone https://github.com/IAAP-project/detection-chute.git`)
-- Commit and push the changes.
-- Create a pull request via Github. (Go to the forked repo and press the `Pull request` button)
+# How to execute 
+> $ pip3 install -r requirements.txt 
+> $ python3 new.py
+
