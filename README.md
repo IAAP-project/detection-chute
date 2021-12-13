@@ -18,3 +18,8 @@ If the heigh of the contour is lower than width, it may be a fall and we add 1 t
 
 > $ python3 fall.py
 
+
+# Auteurs : 
+menbres du projet G1-G2 IAAP, fait à Centrale Lille de Novembre 20 - Fevrier 22.
+
+Contact : projetiaap@gmail.com
