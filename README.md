@@ -16,5 +16,5 @@ If the heigh of the contour is lower than width, it may be a fall and we add 1 t
 # How to execute 
 > $ pip3 install -r requirements.txt
 
-> $ python3 new.py
+> $ python3 fall.py
 
