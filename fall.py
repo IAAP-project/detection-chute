@@ -1,11 +1,9 @@
-#Based on Zed code - Person Fall detection using raspberry pi camera and opencv lib. Link: https://www.youtube.com/watch?v=eXMYZedp0Uo
-
 import cv2
 import time
 
 fitToEllipse = False
-cap = cv2.VideoCapture('queda.mp4')
-# cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture('queda.mp4')
+cap = cv2.VideoCapture(0)
 time.sleep(2)
 
 fgbg = cv2.createBackgroundSubtractorMOG2()
@@ -23,10 +21,8 @@ while(1):
         contours, _ = cv2.findContours(fgmask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
         if contours:
-        
             # List to hold all areas
             areas = []
-
             for contour in contours:
                 ar = cv2.contourArea(contour)
                 areas.append(ar)
@@ -62,4 +58,8 @@ while(1):
              break
     except Exception as e:
         break
+
 cv2.destroyAllWindows()
+
+
+
