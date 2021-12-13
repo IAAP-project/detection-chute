@@ -14,6 +14,7 @@ For each frame readed of the video corverted into gray, is removed the backgroun
 If the heigh of the contour is lower than width, it may be a fall and we add 1 to a count, if the count is greater than 10, will be drawed a rectangle to the possible person fallen.
 
 # How to execute 
-> $ pip3 install -r requirements.txt 
+> $ pip3 install -r requirements.txt
+
 > $ python3 new.py
 
